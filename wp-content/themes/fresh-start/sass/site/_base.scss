@@ -1,0 +1,44 @@
+html, body, [canvas=container], [off-canvas] {  
+	font-family: 'Roboto', sans-serif;
+	font-weight: $light;
+	color: $black;
+	letter-spacing: -0.3px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	height:100%;
+	position:relative;
+	background:$mdc-grey-100;
+}
+ 
+.login-background-wrapper {
+	height:100%;
+	width:100%;
+
+}
+
+.woocommerce-page .woocommerce {
+	display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width:100%;
+}
+
+@include media-breakpoint-up(md) {
+
+	.login-background-wrapper {
+		min-height:600px;
+	}
+
+	.login-background {
+		background-image:url('../images/login-background.jpg');
+		background-repeat:no-repeat;
+		background-size:cover;
+		background-position:center center;
+	}
+
+}

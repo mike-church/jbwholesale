@@ -1,0 +1,194 @@
+@include media-breakpoint-up(xs) {
+
+	form.cart {
+		margin:0 !important;
+		.add-to-cart-wrap {
+			position:relative;
+			background:$mdc-grey-50;
+			border:$mdc-grey-300 solid 1px;
+			box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+			padding: .5rem;
+			label {
+				font-size:14px;
+				font-weight:$medium;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				position:absolute;
+				top:.5rem;
+				left:.5rem;
+				padding:10px 12px 0 12px;
+				height:42px;
+				background-color:$mdc-grey-100;
+				border:$mdc-grey-300 solid 1px;
+			}
+			.quantity {
+				float:none !important;
+				float: none !important;
+				margin: 0 !important;
+				border:$mdc-grey-300 solid 1px;
+				height:42px;
+				input.qty {
+					border:none;
+					height:40px;
+					padding-left:65px;
+					padding-right:0;
+					text-align: left;
+					width:110px;
+					font-size:14px;
+					outline:none;
+				}
+
+			}
+			.quantity::before {
+				content:"QTY";
+				font-size:14px;
+				font-weight:$medium;
+				letter-spacing: 1px;
+				position:absolute;
+				top:.5rem;
+				left:.5rem;
+				padding:10px 12px 0 12px;
+				height:42px;
+				background-color:$mdc-grey-100;
+				border:$mdc-grey-300 solid 1px;
+			}
+			.quantity.hidden {
+				display: none;
+			}
+		}
+	
+		.button {
+			float:none !important;
+			height:42px;
+			
+
+		}
+	}
+	.wc_gc_giftcard_product form.cart .add-to-cart-wrap {
+		position:relative;
+		background:none;
+		border:none;
+		box-shadow: none;
+		padding:0;
+	}
+}
+
+.woocommerce form.checkout_coupon, .woocommerce form.login, .woocommerce form.register {
+    border: $mdc-grey-400 solid 1px;
+    border-radius:0;
+    padding: 1em;
+    margin: 0;
+    text-align: left;
+    background:$white;
+    margin-bottom:1em;
+
+}
+
+form {
+	.form-row {
+		margin-right:0;
+		margin-left:0;
+		label {
+			line-height: normal;
+			float:none;
+			display:block;
+			font-size: 14px;
+			font-weight: $medium;
+		}
+		.woocommerce-input-wrapper {
+			width:100%;
+		}
+		input, textarea {
+			padding:.5rem 1rem;
+			font-size: 16px;
+			border:$mdc-grey-400 solid 1px;
+			box-shadow: none;
+			background-color:$mdc-grey-50;
+			width:100%;
+		}
+		.select2-selection__arrow {
+			background-color:$mdc-grey-400;
+			b {
+				border-color: $white transparent transparent transparent !important;
+			}
+		}
+		label.checkbox, label.woocommerce-form-login__rememberme {
+			input {
+				width:auto;
+			}
+		}
+
+	}
+	.woocommerce-checkout-payment {
+		.form-row {
+			flex-direction: column;
+			flex-wrap:initial;
+			label {
+				margin:-15px 0 0 20px;
+			}
+		}
+		#wc-elavon-converge-credit-card-credit-card-form { 
+			.form-row label {
+				margin:auto;
+			}
+			.woocommerce-validated label {
+				margin:-15px 0 0 20px;
+			}
+		}
+	}
+}
+
+.woocommerce-checkout-payment {
+    background: $mdc-grey-200 !important;
+    border-radius: 0 !important;
+}
+.woocommerce ul.order_details {
+    padding:0;
+}
+
+.woocommerce .woocommerce-customer-details address {
+    font-style: normal;
+    margin-bottom: 0;
+    border:none !important;
+    border-bottom-width: 0;
+    border-right-width: 0;
+    text-align: left;
+    width: 100%;
+    border-radius: 0;
+    padding:0;
+}
+
+.woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1 {
+    float: none;
+    width: 100%;
+}
+
+.woocommerce .col2-set .col-2, .woocommerce-page .col2-set .col-2 {
+    float: none;
+    width: 100%;
+}
+
+.col-2 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.col-1 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.woocommerce #content table.cart td.actions .input-text, .woocommerce table.cart td.actions .input-text, .woocommerce-page #content table.cart td.actions .input-text, .woocommerce-page table.cart td.actions .input-text {
+    width: auto;
+}
+
+a.form-control {
+	display: none !important;
+}
+
+.wc_gc_datepicker {
+	border:$mdc-grey-300 solid 1px;
+	background:$white;
+}

@@ -1,0 +1,131 @@
+.facetwp-checkbox, .facetwp-link {
+	position:relative;
+	line-height:normal;
+	font-size:1rem;
+	background-image:none !important;
+	margin-bottom:0 !important;
+	border-bottom:$mdc-grey-200 solid 1px;
+	.facetwp-counter {
+		position:absolute;
+		right:0;
+		top:10px;
+		font-size:.85rem;
+	}
+}
+.facetwp-checkbox:hover, .facetwp-link:hover {
+	color:$mdc-blue-500;
+}
+.facetwp-checkbox {
+	padding:8px 20px;
+}
+.facetwp-link {
+	padding:8px 0px;
+}
+.facetwp-depth {
+	margin-left:0 !important;
+	.facetwp-link.checked {
+		font-weight: $medium;
+	}
+}
+.facetwp-checkbox:before {
+	font-family: 'icomoon';
+	content: "\e909";
+	position:absolute;
+	top:10px;
+	left:0;
+	font-size:16px;
+	color:$mdc-blue-500;
+}
+.facetwp-checkbox.checked:before {
+	font-family: 'icomoon';
+	content: "\e906";
+	position:absolute;
+	top:11px;
+	left:0;
+	font-size:16px;
+}
+.facetwp-checkbox.checked {
+	font-weight: $medium;
+}
+
+.facet-header {
+	position:relative;
+	padding:10px 24px 10px 0;
+	h6 {
+		font-size:1rem;
+		text-transform: uppercase;
+	}
+	button {
+		background-image:none;
+		border:none;
+		padding:0;
+		height:100%;
+		width:100%;
+		position:absolute;
+		top:0;
+		right:0;
+		z-index: 1;
+		background:transparent;
+		i {
+			position:absolute;
+			right:0;
+			top:50%;
+			transform:translate(0, -50%);
+
+		}
+	}
+	button:focus {
+		outline:none;
+	}
+}
+.sortbar-top {
+	border-bottom:$mdc-grey-200 solid 1px;
+}
+.sortbar-bottom {
+	border-top:$mdc-grey-200 solid 1px;
+}
+.facetwp-counts {
+	font-size: .9rem;
+	font-weight: $medium;
+}
+.facetwp-sort, .facetwp-per-page {
+	select {
+	  margin: 0;
+	  width: auto;
+	  padding:.375rem 2rem .375rem 1rem;
+	  font-size: 16px;
+	  border: 2px solid $mdc-blue-500;
+	  font-weight: $medium;
+	  border-radius:3px;
+	  -webkit-appearance: none;
+	  -moz-appearance: none;
+	  appearance: none;
+	  background: url('../images/icon-sort-down.png') 90% / 10px no-repeat $white;
+	  outline:none;
+	}
+
+
+	/* CAUTION: IE hackery ahead */
+
+
+	select::-ms-expand { 
+    	display: none; /* remove default arrow in IE 10 and 11 */
+	}
+
+	/* target Internet Explorer 9 to undo the custom arrow */
+	@media screen and (min-width:0\0) {
+    	select {
+        	background:none\9;
+        	padding: 5px\9;
+    	}
+	}
+}
+
+.facetwp-expand {
+	display:none;
+}
+a.facetwp-toggle {
+	font-weight: $medium;
+	font-size: .85rem;
+	line-height: 2rem;
+}

@@ -1,0 +1,39 @@
+@include media-breakpoint-up(xs) {
+
+	.affwp-form {
+		.affwp-wrap, fieldset {
+			input {
+				padding:.5rem 1rem;;
+				background:#fafafa;
+				border:#bdbdbd solid 1px;
+				font-size:16px;
+			}
+			label {
+				font-size: 14px;
+				font-weight: $medium;
+			}
+			textarea {
+				padding:.5rem 1rem;;
+			}
+		}
+	}
+
+	.woocommerce_gc_giftcard_form {
+		label {
+			font-size:14px;
+			font-weight:$medium;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+		}
+		.wc_gc_field {
+			input {
+				padding:.3rem 1rem;
+			}
+			textarea {
+				width:100%;
+				padding:.3rem 1rem;
+			}
+		}
+	}
+
+}

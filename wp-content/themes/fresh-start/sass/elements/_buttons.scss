@@ -1,0 +1,88 @@
+.btn {
+  text-transform: uppercase;
+  font-weight: $medium;
+  border-radius: 3px;
+  padding: .375rem 1rem;
+  border-width:2px;
+}
+.btn-link:hover, .btn-link.focus, .btn-link:focus {
+  text-decoration: none;
+}
+
+.btn-primary {
+	background-color:$primary;
+	border-color:$primary;
+}
+
+.btn-primary:hover {
+	background-color:$mdc-blue-700;
+	border-color:$mdc-blue-700;
+}
+.btn-outline-primary:hover {
+	background-color:$mdc-blue-700;
+	border-color:$mdc-blue-700;
+	color:$white !important;
+}
+
+.submit, .button {
+	background-color:$primary !important;
+	color:$white !important;
+	font-size: 1rem !important;
+	line-height: 1.5 !important;
+	vertical-align: middle !important;
+	padding: .375rem 1rem !important;
+	font-weight: $medium !important;
+	text-transform: uppercase !important;
+	border-color:$primary !important;
+	border-radius: 3px !important;
+	border-width: 2px !important;
+	border-style:none !important;
+	width:auto !important;
+	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.button:hover {
+	background-color:$mdc-blue-700 !important;
+	color:$white !important;
+}
+
+.checkout-button.button {
+	padding:.75rem 1rem !important;
+}
+
+
+.animate-icon {
+transition: transform .5s;
+
+}
+
+.animate-icon:hover {
+	transform: translate(0px, -10px);
+}
+
+.close {
+	float: none;
+	position: absolute;
+	top:30px;
+	right:30px;
+	border-radius:50%;
+	border:2px solid $mdc-red-900;
+	width:50px;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	overflow: hidden;
+	color:$white;
+	background-color:$mdc-red-900;
+	text-shadow: none;
+	opacity: 1;
+	transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	-webkit-transition: all .25s ease;
+	-o-transition: all .25s ease;
+}
+.close:hover {
+	text-shadow: none;
+	color:$white;
+}

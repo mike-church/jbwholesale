@@ -1,3 +1,24 @@
+# Ignore system files and typical project files
+*~
+.DS_Store
+.svn
+.cvs
+*.bak
+*.swp
+Thumbs.db
+.htaccess
+
+# Sublime Text
+*.sublime-workspace
+
+# PHPStorm
+*.idea
+
+# Ignore everything in the root except the "wp-content" directory.
+/*
+!.gitignore
+!wp-content/
+
 # ignore everything in the root except the "wp-content" directory.
 !wp-content/
 
@@ -8,11 +29,21 @@ wp-content/*
 !wp-content/plugins/
 !wp-content/themes/
 
-# ignore these plugins
-wp-content/plugins/hello.php
+# Ignore everything in the "plugins" directory, except the plugins you specify
+wp-content/plugins/*
+!wp-content/plugins/jb-nutritionals/
+!wp-content/plugins/jb-feature-video/
+!wp-content/plugins/jb-homepage-hero/
+!wp-content/plugins/jb-nutritional-facts/
+!wp-content/plugins/jb-recipes/
+!wp-content/plugins/jb-logos/
+!wp-content/plugins/jb-product-notice/
+!wp-content/plugins/jb-feature-image/
+!wp-content/plugins/woocommerce-local-pickup-email/
 
-# ignore specific themes
-wp-content/themes/twenty*/
+# Ignore everything in the "themes" directory, except the themes you specify
+wp-content/themes/*
+!wp-content/themes/fresh-start/
 
 # ignore node dependency directories
 node_modules/
